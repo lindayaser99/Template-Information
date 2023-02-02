@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+ul li{
+    list-style: none;
+}
+nav a{
+    padding:0 5px;
+}
+
+nav a,#Contact a{
+    text-decoration: none;
+    color: #FFF;
+}
+nav ul li.active a{
+    color: black;
+    background-color: #ffd800;
+}
+header{
+    background-image: url(../Images/stars.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+header .pos_fi{
+    width: 82%;
+}
+.head_info{
+    height: calc(100vh - 40px);
+}
+.head_info,.about_us,.portfolio{
+    color:#FFF
+}
+/*about style*/
+#About{
+    background-color:#191b29;
+}
+#About .about_us .center{
+    position: relative;
+    top: -60px;
+    text-align: center;
+}
+#About .about_us .center img{
+    object-fit: cover;
+    width: 80%;
+}
+/*team style*/  
+#Team .app {
+    background-color: #FFF;
+}
+#Team .app .left>div{
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+#Team .app .left div:first-child{
+    background-color:#ffe347;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#Team .app .right{
+    
+    position: relative;
+    right: 10%;
+}
+
+#Team .app .right img{
+    
+    width: 130%;
+    height: 100%;
+}
+#Team{
+    background-color: #ffd800;
+}
+/*portfolio style*/
+#Portfolio{
+    background-image: url(../Images/stars.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+/*contact style*/
+#Contact{
+    background-color:#191b29;
+    color: #FFF;
+}
+#Contact a{
+    
+    color: #FFF;
+}
+/*footer style*/
+footer{
+    background-color:#191b29;
+    color: #FFF;
+}
+button{
+    border: none;
+    padding: 10px;
+   
+}
+.head_info button,.portfolio button{
+    background-color: #ffd800;
+    color: black;
+    font-weight: bold;
+}
+.head_info input{
+    background-color:transparent;
+    color: #FFF;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-right: none;
+    margin-right: 4px;
+}
+.head_info span{
+    font-size: 30px;
+    font-weight: 100;
+}
+.team>p,.portfolio>p{
+    font-size: 30px;
+    font-weight: 100;
+}
+.app button{
+    background-color: #191b29;
+    color: #FFF;
+    font-weight: bold;
+}
+.show-ul {
+    display: block !important;
+}
+
+@media (max-width: 991px) {
+    header .container nav .small-menu i{
+        color: #FFF;
+    }
+    header .container nav .small-menu 
+    {
+     display: block;
+     line-height: 50px;
+    }
+    header .container nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:calc(100% - 18px);
+        left:0;
+        width: 100%;
+        background-color: #191b29;
+        
+    }
+/*     
+    header .container nav .small-menu:hover + ul {
+       display: block;
+    } */
+    
+}
+@media (min-width: 992px)  { 
+    header .container nav .small-menu i
+    {
+     display: none;
+    }
+    
+  }
