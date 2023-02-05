@@ -75,12 +75,13 @@ header .pos_fi{
 }
 #Team{
     background-color: #ffd800;
+    margin-bottom: 10px;
 }
 /*portfolio style*/
 #Portfolio{
     background-image: url(../Images/stars.png);
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
    
 }
 /*contact style*/
@@ -161,6 +162,12 @@ button{
     header .container nav .small-menu i
     {
      display: none;
+    }
+    
+  }
+  @media (max-width: 992px)  { 
+    body{
+        text-align: center;
     }
     
   }
